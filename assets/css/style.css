@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 80vw;
+  margin: 30px auto;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-areas:
+    "Rot Rot Rot Rot"
+    "Blau Blau Grün Grün"
+    "Blau Blau Lila Lila2";
+  grid-gap: 5px;
+}
+
+/* .grid {
+  display: grid;
+  place-items: center;
+  height: 3em;
+  color: black;
+  font-size: 20px;
+} */
+
+.grid-item1 {
+  grid-area: Rot;
+  background-color: rgb(240, 29, 29);
+}
+
+.grid-item2 {
+  grid-area: Blau;
+  background-color: rgb(89, 129, 238);
+}
+
+.grid-item3 {
+  grid-area: Grün;
+  background-color: rgb(9, 230, 9);
+}
+
+.grid-item4 {
+  grid-area: Lila;
+  background-color: rgb(127, 131, 243);
+}
+
+.grid-item5 {
+  grid-area: Lila2;
+  background-color: rgb(127, 131, 243);
+}
